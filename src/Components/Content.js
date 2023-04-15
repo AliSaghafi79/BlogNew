@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useContext, useEffect, useRef } from "react";
 import { mycontext } from "../context";
 import Page404 from "./Page404";
-import Load from "../../public/Images/loading.gif";
+import Load from "../Images/loading.gif";
 import Details from "./Detalis";
 
 const Content = () => {

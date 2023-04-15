@@ -1,7 +1,7 @@
 import BlogList from "./BlogList";
 import { useContext } from "react";
 import Header from "./Header";
-import Load from "../../public/Images/loading.gif";
+import Load from "../Images/loading.gif";
 import { mycontext } from "../context";
 
 const Blog = () => {

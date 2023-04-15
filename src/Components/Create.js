@@ -1,6 +1,5 @@
-import { useContext, useContext, useState } from "react";
+import { useContext } from "react";
 import Header from "./Header";
-import { useNavigate } from "react-router-dom";
 import { mycontext } from "../context";
 
 const Create = () => {
