@@ -1,25 +1,15 @@
 import BlogList from "./BlogList";
 import { useContext, useEffect } from "react";
 import Header from "./Header";
-import Load from "../../public/Images/loading.gif";
+import Load from "../Images/loading.gif";
 import { mycontext } from "../context";
 
 const Blog = () => {
-  const { data, setData, loading, steLoading } = useContext(mycontext);
+  const { data, loading, Fetching } = useContext(mycontext);
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch("http://localhost:8000/blogs")
-        .then((res) => {
-          return res.json();
-        })
-        .then((blog) => {
-          setData(blog);
-
-          steLoading(false);
-        });
-    }, 1000);
-  }, []);
+    Fetching();
+  });
 
   return (
     <>

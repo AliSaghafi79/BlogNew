@@ -1,22 +1,10 @@
-import { useState } from "react";
+import { useContext } from "react";
 import Header from "./Header";
-import { useNavigate } from "react-router-dom";
+import { mycontext } from "../context";
 
 const Create = () => {
-  const [title, setTitle] = useState("");
-  const [text, setText] = useState("");
-  const Navigate = useNavigate();
-
-  const handleSubmit = () => {
-    const blog = { title, text };
-    fetch("http://localhost:8000/blogs/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(blog),
-    })
-      .then(setText(""), setTitle(""), alert("Successfuly"))
-      .then(Navigate("/"));
-  };
+  const { text, title, setTitle, setText, handleSubmit } =
+    useContext(mycontext);
 
   return (
     <>
