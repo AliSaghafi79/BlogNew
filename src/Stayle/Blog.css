@@ -1,0 +1,263 @@
+.header {
+    background-color: purple;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.header h3 {
+    color: pink;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding-top: 0.2em;
+    padding-left: 0.87em;
+    font-style: italic;
+}
+
+.header span {
+    width: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.header span p {
+    color: pink;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.blogList {
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogBox {
+
+    width: 30em;
+    height: auto;
+    margin-top: 6rem;
+    background-color: purple;
+    border-radius: 1rem;
+    position: relative;
+
+
+
+}
+
+.blogBox:nth-last-child(1) {
+    margin-bottom: 3rem;
+}
+
+.blogTitle {
+    width: 100%;
+    height: 4rem;
+    background-color: pink;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.blogTitle p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: purple;
+}
+
+.blogText p {
+    font-size: 1.1rem;
+    color: pink;
+    padding: 1.1rem;
+    display: block;
+    /* word-wrap: break-word; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+
+}
+
+.blogText {
+    height: auto;
+    display: block;
+    width: 100%;
+
+}
+
+
+.create {
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.create form {
+    margin-top: 5rem;
+    background-color: purple;
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+
+}
+
+.create label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5rem;
+    color: pink;
+}
+
+.create input,
+.create textarea {
+    width: 20rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    background-color: pink;
+    color: purple;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.create textarea {
+    height: 10rem;
+    padding-top: 1rem;
+}
+
+
+.create button {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 2rem;
+    background-color: pink;
+    color: purple;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 1rem;
+
+
+}
+
+
+.LoadImg {
+    width: 35rem;
+    margin-left: 28%;
+    margin-top: 7%;
+}
+
+.Delete {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: purple;
+
+}
+
+
+.login {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    right: 0;
+    cursor: pointer;
+    color: purple;
+
+
+}
+
+
+.p1 {
+    font-size: 20rem;
+    color: purple;
+    text-shadow: 10px 10px 50px purple;
+    height: 20rem;
+    
+    
+
+}
+
+.Page404 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 37rem;
+
+}
+
+.p2 {
+    font-size: 3rem;
+    color: purple;
+    text-shadow: 10px 10px 50px purple;
+    margin-left: 30%;
+}
+
+
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.contentBox{
+    width: 50rem;
+    height: auto;
+    word-break: keep-all;
+    background-color: purple;
+    margin-top: 2rem;
+    border-radius: 0.4rem;
+}
+.contentBox p{
+    padding: 1.5rem;
+    color: pink;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+
+
+.link404{
+    font-size: 1.5rem;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    margin-left: 14rem;
+    text-decoration: none;
+    color: purple;
+    background-color: pink;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+
+}
