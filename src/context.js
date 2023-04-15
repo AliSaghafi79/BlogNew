@@ -14,9 +14,23 @@ const Contexts = ({ children }) => {
   const [loading, steLoading] = useState(true);
   const [blog, setBlog] = useState([]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((res) => {
+          return res.json();
+        })
+        .then((blog) => {
+          setData(blog);
+
+          steLoading(false);
+        });
+    }, 1000);
+  }, []);
+
   return (
     <mycontext.Provider
-      value={{ data, setData, loading, steLoading, blog, setBlog }}
+      value={{ data , loading, steLoading, blog, setBlog }}
     >
       {children}
     </mycontext.Provider>
