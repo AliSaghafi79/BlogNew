@@ -33,7 +33,7 @@ const Contexts = ({ children }) => {
       .then(Navigate("/"));
   };
 
-  useEffect(() => {
+  const Fetching = () => {
     setTimeout(() => {
       fetch("http://localhost:8000/blogs")
         .then((res) => {
@@ -45,11 +45,12 @@ const Contexts = ({ children }) => {
           steLoading(false);
         });
     }, 1000);
-  }, []);
+  };
 
   return (
     <mycontext.Provider
       value={{
+        Fetching,
         data,
         loading,
         steLoading,

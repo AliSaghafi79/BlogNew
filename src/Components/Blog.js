@@ -1,11 +1,15 @@
 import BlogList from "./BlogList";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import Header from "./Header";
 import Load from "../Images/loading.gif";
 import { mycontext } from "../context";
 
 const Blog = () => {
-  const { data, loading } = useContext(mycontext);
+  const { data, loading, Fetching } = useContext(mycontext);
+
+  useEffect(() => {
+    Fetching();
+  });
 
   return (
     <>
